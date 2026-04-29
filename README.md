@@ -15,6 +15,13 @@ We have moved away from heavy frameworks to a **Custom Lightweight MVC Architect
 4.  **Security:** Hacker-grade security enforcement operating directly at the kernel and firewall levels.
 
 ---
+## 🤝 Contribution Guide
+I am the Project Lead with domain expertise in ISP & Hosting. I am inviting:
+- **PHP Experts:** For the core ERP and API architecture.
+- **System Programmers:** To build the `cat-daemon` for OS-level execution.
+- **Linux Admins:** For server hardening and stack optimization.
+
+---
 
 ## 🏗 Key Components
 
@@ -44,3 +51,6 @@ One-command installation for **Ubuntu 22.04/24.04** and **AlmaLinux 9**:
 
 ```bash
 curl -sSL [https://catbangladesh.com/install.sh](https://catbangladesh.com/install.sh) | sudo bash
+
+## 💬 Why CAT CMS?
+Because managing a hosting business shouldn't require 5 different subscriptions. **CAT CMS is the cPanel + WHMCS killer
