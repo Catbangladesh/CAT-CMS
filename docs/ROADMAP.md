@@ -2,7 +2,7 @@
 
 This roadmap outlines the development stages of **CAT CMS**. Our goal is to build the most stable and feature-rich open-source Hosting & ISP management ecosystem.
 
----  
+---
 
 ## 🏁 Phase 1: Foundation & Core ERP (Month 1-2)
 *Focus: Setting up the Laravel environment and Billing Logic.*
