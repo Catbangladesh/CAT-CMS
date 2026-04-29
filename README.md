@@ -1,56 +1,92 @@
-# 🐈 CAT CMS (Next-Gen ISP & Hosting ERP)
 
-### *"Custom MVC Powered | OpenLiteSpeed Optimized | Linux Native"*
+# CAT CMS (Next Gen Custom MVC & OpenLiteSpeed Based) 🐈
+### "The High-Performance Open Source Hosting & ISP ERP"
 
-**CAT CMS** is a high-performance management layer that functions as both a **Web Control Panel** and a **Billing & ERP Engine**. It is specifically designed for providers to manage Bare Metal, VPS, Shared Hosting, and ISP operations within a single unified ecosystem.
-
----
-
-## 🛠 System Architecture (The "CAT" Logic)
-We have moved away from heavy frameworks to a **Custom Lightweight MVC Architecture** to ensure minimum memory footprint and maximum execution speed.
-
-1.  **Application Layer:** Native PHP MVC (Custom Built for speed, security, and low overhead).
-2.  **Web Server:** Native optimization for **OpenLiteSpeed** (LSCache, HTTP/3, and event-driven performance).
-3.  **Service Layer:** A dedicated system daemon (`cat-daemon`) written in Go/Python that executes backend commands with `root` privileges.
-4.  **Security:** Hacker-grade security enforcement operating directly at the kernel and firewall levels.
-
----
-## 🤝 Contribution Guide
-I am the Project Lead with domain expertise in ISP & Hosting. I am inviting:
-- **PHP Experts:** For the core ERP and API architecture.
-- **System Programmers:** To build the `cat-daemon` for OS-level execution.
-- **Linux Admins:** For server hardening and stack optimization.
+**CAT CMS** is a lightweight, high-speed management ecosystem built with a **Custom MVC Architecture** and powered by the **OpenLiteSpeed** web server. It eliminates the overhead of heavy frameworks while providing enterprise-grade billing and server automation.
 
 ---
 
-## 🏗 Key Components
+## 🚀 Why Custom MVC & OpenLiteSpeed?
+- **Speed:** Zero framework overhead ensures lightning-fast execution.
+- **Performance:** OpenLiteSpeed provides superior PHP processing via **LSAPI** and built-in **LSCache**.
+- **Control:** Granular control over Linux system resources and service management.
 
-### 🖥 The Controller (Infrastructure)
-- **Webstack:** **OpenLiteSpeed** (Primary) + Nginx (Optional Reverse Proxy).
-- **Virtualization:** Native support for KVM/LXC management (Roadmap).
-- **Multi-Tenancy:** Strict resource isolation for Shared, Reseller, and Dedicated environments.
-- **DNS & SSL:** PowerDNS integration and automated Wildcard SSL via Let's Encrypt.
+## 🛠 Tech Stack
+- **Language:** PHP 8.3+ (Pure MVC Pattern)
+- **Web Server:** OpenLiteSpeed (OLS)
+- **Database:** MariaDB (using PDO for security)
+- **UI Base:** AdminLTE 4 (Bootstrap 5)
+- **Template Engine:** BladeOne or Twig
 
-### 💰 The Engine (ISP & Business Automation)
-- **ISP Module:** Radius Server and MikroTik API integration (Bandwidth control, PPPoE, Hotspot management).
-- **Billing:** Dynamic tax rules, pro-rata invoicing, and automated service suspension.
-- **Local Gateways:** Native support for **bKash, Nagad, Upay,SurjoPay, and SSLCommerz**.
-- **Global Gateways:** Stripe,PayPal & others Gateways integration 
-
----
-
-## 🗺 Roadmap & Milestones
-- [ ] **Phase 1 (Alpha):** Custom MVC Core Development & Database Schema.
-- [ ] **Phase 2 (Beta):** OpenLiteSpeed Virtual Host automation & OLS API integration.
-- [ ] **Phase 3 (Stable):** Full ISP Billing cycle with Radius/MikroTik automation.
-
----
-
-## 💬 Why CAT CMS?
-Because managing a hosting business shouldn't require 5 different subscriptions. **CAT CMS is the cPanel + WHMCS killer
-
-## 📦 OS Native Setup
-One-command installation for **Ubuntu 22.04/24.04** and **AlmaLinux 9**:
-
+## 📦 Installation
+Optimized for **Ubuntu 22.04/24.04 LTS**.
 ```bash
-curl -sSL [https://catbangladesh.com/install.sh](https://catbangladesh.com/install.sh) | sudo bash
+curl -sSL https://catbangladesh.com | sudo bash
+```
+
+---
+
+### ২. `docs/panel-logic.md` (OpenLiteSpeed Focus)
+
+```markdown
+# OpenLiteSpeed Control Logic 🖥️
+
+This document explains how CAT CMS interacts with the OpenLiteSpeed (OLS) web server.
+
+### 1. Web Server Integration
+- **OLS Configuration:** The system generates XML-based VirtualHost configurations for OLS.
+- **Listeners:** Automated management of Port 80 (HTTP) and Port 443 (HTTPS) listeners.
+- **LSPHP:** Each user account will have its own **LSPHP External Application** profile to ensure process isolation and security.
+
+### 2. Automation Tasks
+- **VHost Creation:** Creating `/usr/local/lsws/conf/vhosts/domain_name.xml`.
+- **Graceful Restart:** Triggering `killall -HUP lshttpd` to apply changes without downtime.
+- **SSL:** Automated mapping of Let's Encrypt certificates to OLS listeners.
+```
+
+---
+
+### ৩. `docs/architecture.md` (Custom MVC Structure)
+
+```markdown
+# Custom MVC Architecture 🏗️
+
+CAT CMS follows a strict **Model-View-Controller** pattern to maintain clean and scalable code.
+
+### Folder Structure:
+- `/app`: Core logic (Controllers, Models, Middleware).
+- `/config`: System and Database configuration files.
+- `/public`: The only accessible directory (Index.php, Assets).
+- `/routes`: Definition of URL mappings and request handling.
+- `/views`: UI templates based on AdminLTE 4.
+
+### Core Principles:
+1. **Security:** All database queries must use **PDO Prepared Statements**.
+2. **Routing:** A lightweight custom router handles all incoming requests.
+3. **Services:** OS-level commands are executed via a secure System Service Layer.
+```
+
+---
+
+### ৪. `ROADMAP.md` (Updated Milestones)
+
+```markdown
+# 🗺️ CAT CMS Roadmap
+
+- [ ] **Phase 1:** Custom MVC Core setup & AdminLTE 4 UI integration.
+- [ ] **Phase 2:** OpenLiteSpeed VirtualHost automation module.
+- [ ] **Phase 3:** Core Billing & WHMCS-grade ERP engine.
+- [ ] **Phase 4:** ISP Radius & Bandwidth Management module.
+- [ ] **Phase 5:** Production-ready One-Click Installer for Ubuntu.
+```
+
+---
+
+### আপনার জন্য পরবর্তী পদক্ষেপ:
+১. **ফোল্ডার রিনেম:** আপনার গিটহাবের `Doc` ফোল্ডারটি রিনেম করে **`docs`** করে ফেলুন।
+২. **ফাইল আপডেট:** এই নতুন ইংরেজিতে লেখা ফাইলগুলো আগের ফাইলগুলোর বদলে আপলোড করে দিন।
+৩. **ইন্সটলার আপডেট:** আপনার সাইটের `install.sh` ফাইলে এনজিনেক্স-এর বদলে **OpenLiteSpeed** ইন্সটল করার কমান্ডগুলো যোগ করুন (যেটি আমি আগের উত্তরে দিয়েছিলাম)।
+
+আপনার **Custom MVC**-এর জন্য কি কোনো **সেশন ম্যানেজমেন্ট** বা **সিকিউরিটি লাইব্রেরি** ব্যবহারের পরিকল্পনা আছে? থাকলে সেটি আর্কিটেকচার ফাইলে যোগ করা যেতে পারে।
+
+**শুভকামনা আপনার CAT CMS প্রজেক্টের জন্য!** কন্ট্রিবিউটর পাওয়া শুরু হলে আপনি গিটহাবের **Projects** ট্যাবে টাস্কগুলো ভাগ করে দিতে পারেন।
