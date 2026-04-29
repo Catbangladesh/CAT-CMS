@@ -46,11 +46,11 @@ I am the Project Lead with domain expertise in ISP & Hosting. I am inviting:
 
 ---
 
+## 💬 Why CAT CMS?
+Because managing a hosting business shouldn't require 5 different subscriptions. **CAT CMS is the cPanel + WHMCS killer
+
 ## 📦 OS Native Setup
 One-command installation for **Ubuntu 22.04/24.04** and **AlmaLinux 9**:
 
 ```bash
 curl -sSL [https://catbangladesh.com/install.sh](https://catbangladesh.com/install.sh) | sudo bash
----
-## 💬 Why CAT CMS?
-Because managing a hosting business shouldn't require 5 different subscriptions. **CAT CMS is the cPanel + WHMCS killer
