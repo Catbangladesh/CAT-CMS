@@ -1,3 +1,6 @@
+[![Telegram Group](https://shields.io)](https://t.me/CATCMS_Global)
+[![GitHub Stars](https://shields.io)](https://github.com)
+[![License: MIT](https://shields.io)](https://opensource.org)
 
 # CAT CMS 🐈
 ## *Integrated Web Panel + Hosting/Domain/ISP Management + Billing + CRM*
@@ -30,7 +33,7 @@
 ---
 ## 💬 Join Our Community
 Have questions or want to contribute? Join our Telegram group:
-[👉 Join CAT CMS Telegram Group](https://t.me/catcmsdev)
+[👉 Join CAT CMS Telegram Group](https://t.me/CATCMS_Global)
 
 
 
