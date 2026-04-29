@@ -1,6 +1,16 @@
 
-# CAT CMS (Next Gen Custom MVC & OpenLiteSpeed Based) 🐈
-### "The High-Performance Open Source Hosting & ISP ERP"
+# CAT CMS 🐈
+## *Integrated Web Panel + Hosting/Domain/ISP Management + Billing + CRM*
+
+**CAT CMS** is a comprehensive, all-in-one Enterprise Resource Planning (ERP) and Server Control system. Designed for efficiency, it combines the power of infrastructure management with the automation of business operations.
+
+### 🌐 Key Pillars of CAT CMS:
+1. **Control Panel:** High-performance Linux management via **OpenLiteSpeed**.
+2. **Hosting & Domain:** Automated provisioning for shared hosting and domain reselling.
+3. **ISP Management:** Native **Radius integration** for bandwidth and subscriber control.
+4. **Billing Engine:** WHMCS-grade **automated invoicing**, recurring payments, and pro-rata billing.
+5. **CRM & Support:** Integrated **Client Portal** with support tickets and customer lifecycle management.
+
 
 **CAT CMS** is a lightweight, high-speed management ecosystem built with a **Custom MVC Architecture** and powered by the **OpenLiteSpeed** web server. It eliminates the overhead of heavy frameworks while providing enterprise-grade billing and server automation.
 
