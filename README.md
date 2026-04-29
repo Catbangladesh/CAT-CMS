@@ -27,7 +27,7 @@ Unlike traditional panels, CAT CMS uses a **Hybrid Bridge** to communicate with 
 ### 📦 OS Native Setup
 One-command installation for **Ubuntu 22.04/24.04** and **AlmaLinux 9**:
 ```bash
-curl -sSL https://catbangladesh.com| bash
+curl -sSL https://catbangladesh.com | sudo bash
 ```
 
 ---
