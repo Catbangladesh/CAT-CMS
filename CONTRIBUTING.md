@@ -11,7 +11,7 @@ By participating in this project, you agree to abide by our code of conduct: be 
 
 ### 1. Reporting Bugs 🐛
 If you find a bug, please open an **Issue** on GitHub and include:
-- A clear description of the bug.
+- A clear description of the bug. 
 - Steps to reproduce the issue.
 - Your OS version (e.g., Ubuntu 22.04) and PHP version.
 
