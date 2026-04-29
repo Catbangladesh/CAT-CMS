@@ -27,6 +27,12 @@
 - **Database:** MariaDB (using PDO for security)
 - **UI Base:** AdminLTE 4 (Bootstrap 5)
 - **Template Engine:** BladeOne or Twig
+---
+## 💬 Join Our Community
+Have questions or want to contribute? Join our Telegram group:
+[👉 Join CAT CMS Telegram Group](https://t.me/catcmsdev)
+
+
 
 ## 📦 Installation
 Optimized for **Ubuntu 22.04/24.04 LTS**.
