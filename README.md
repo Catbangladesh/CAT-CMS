@@ -49,6 +49,8 @@ The project follows an industry-standard directory structure to ensure easy coll
 │   ├── cloud-init/       # Automated Install Script (install.sh)
 │   └── packer/           # Custom Ubuntu ISO Build scripts
 └── docs/                 # Swagger/OpenAPI Documentation
+---------
+
 
  ## ⚙️ Core Technical Logic & Workflows
 
@@ -64,12 +66,12 @@ The project follows an industry-standard directory structure to ensure easy coll
 ​Visualize fiber optic POP locations.
 ​Monitor real-time client outages on a map.
 ​Optimize technician deployment based on client clusters.
-
+-------
 ## ​📦 Deployment: The "One-Command" Install
 CAT-CMS is designed to be installed via Cloud-init or a simple Bash script on a fresh Ubuntu 24.04 LTS server.
 curl -sSL [https://catbangladesh.com/install.sh](https://catbangladesh.com/install.sh) | sudo bash
 
-
+-------
 ## 💰 Why Choose CAT-CMS? (The Import Substitution Factor)
 
 The primary goal of CAT-CMS is to eliminate the heavy reliance on expensive foreign software licenses. Below is a direct comparison of why CAT-CMS is the superior choice for the local and global market:
@@ -95,3 +97,4 @@ We invite developers (Symfony/Golang/DevOps) and sponsors to join us in building
 ​Location: Jessore, Bangladesh.
 ​Website: catbangladesh.com
 ​© 2026 CAT Bangladesh. All Rights Reserved.
+
